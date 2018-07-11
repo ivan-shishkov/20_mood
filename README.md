@@ -1,6 +1,6 @@
 # Site for the Mood
 
-[TODO. There will be project description]
+This site is intended to improve your mood by display of randomly selected funny quote. Online version of site is hosted on GitHub Pages and available [here](https://ivan-shishkov.github.io/20_mood/).
 
 # Project Goals
 
