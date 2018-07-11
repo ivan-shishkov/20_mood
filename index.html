@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="img/favicon.ico" rel="icon">
     <title>Подниматор настроения</title>
-    <script id="quotes_json" type="application/json">
+    <script id="quotes-json" type="application/json">
       [
         {
           "phrase": "Кукурузные хлопья - теперь без асбеста!",
@@ -65,7 +65,7 @@
       <p id="signature"></p>
     </div>
     <script>
-      var quotes = JSON.parse(document.getElementById('quotes_json').innerHTML);
+      var quotes = JSON.parse(document.getElementById('quotes-json').innerHTML);
       var randomQuoteIndex = Math.floor(Math.random() * quotes.length);
 
       var randomQuote = quotes[randomQuoteIndex];
