@@ -61,5 +61,22 @@
       <p id="phrase"></p>
       <p id="signature"></p>
     </div>
+    <script>
+      var quotes = JSON.parse(document.getElementById('quotes_json').innerHTML);
+      var randomQuoteIndex = Math.floor(Math.random() * quotes.length);
+
+      var randomQuote = quotes[randomQuoteIndex];
+
+      var phrase = document.getElementById('phrase');
+      phrase.innerText = randomQuote.phrase;
+
+      var signature = document.getElementById('signature');
+
+      if (randomQuote.signature) {
+        signature.innerText = randomQuote.signature;
+      } else {
+        signature.innerText = '';
+      }
+    </script>
   </body>
 </html>
