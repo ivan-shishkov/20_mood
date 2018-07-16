@@ -62,7 +62,7 @@
         background-color: lightgoldenrodyellow;
       }
 
-      #quote {
+      .quote {
         width: 700px;
         margin: 0 auto;
         padding: 10px;
@@ -71,30 +71,30 @@
         border-radius: 10px;
       }
 
-      #phrase {
+      .phrase {
         font-size: 18px;
         line-height: 1.5;
       }
 
-      #signature {
+      .signature {
         font-style: italic;
         font-size: 16px;
         text-align: right;
       }
 
-      #smile {
+      .smile {
         width: 200px;
         margin: 20px auto;
       }
     </style>
   </head>
   <body>
-    <div id="smile">
+    <div class="smile">
       <img src="img/smile.png" alt="Весёлый смайлик" width="200" height="175">
     </div>
-    <div id="quote">
-      <p id="phrase"></p>
-      <p id="signature"></p>
+    <div class="quote">
+      <p class="phrase" id="phrase"></p>
+      <p class="signature" id="signature"></p>
     </div>
     <script>
       var quotes = JSON.parse(document.getElementById('quotes-json').innerHTML);
